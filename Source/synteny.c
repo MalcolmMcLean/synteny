@@ -713,7 +713,9 @@ char *generatetestfasta()
   pointmutate(mutseq, 0.1);
   fasta_record(fp, "seq1", seq1);
   fasta_record(fp, "seq2", mutseq);
-  fclose(fp); 
+  fclose(fp);
+    
+    return 0;
   
 }
 void usage(void)

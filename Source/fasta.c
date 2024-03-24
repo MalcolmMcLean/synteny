@@ -86,7 +86,7 @@ FASTA *floadfasta(FILE *fp, int *err)
   answer->N = 0;
   answer ->fs = 0;
 
-  while(line = readline(fp))
+  while ((line = readline(fp)))
   {
     /* header */
     if(line[0] == '>')
